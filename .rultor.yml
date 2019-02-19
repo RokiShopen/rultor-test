@@ -1,0 +1,12 @@
+merge:
+  fast-forward: only
+  rebase: true
+  commanders:
+    - rokishopen
+release:
+  script: |-
+    mvn versions:set "-DnewVersion=${tag}"
+    git commit -am "${tag}"
+    mvn -X clean deploy -Prultor-test
+  commanders:
+    - rokishopen
