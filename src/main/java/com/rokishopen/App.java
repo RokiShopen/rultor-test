@@ -5,7 +5,7 @@ package com.rokishopen;
 
 public class App {
     public String getGreeting() {
-        return "Hello world.";
+        return "Test rultor.";
     }
 
     public static void main(String[] args) {
